@@ -1,0 +1,274 @@
+//=== Veribals ===
+$pading-top: 4px
+$padding-bottom: 4px
+
+// === Veribals ===
+
+// === Mixin ===
+
+@mixin paddings
+    padding-top: $pading-top * 30
+    padding-bottom: $padding-bottom *13
+
+// === Mixin ===
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+a
+    text-decoration: none
+
+button
+    width: 283px
+    height: 77px
+    margin-top: 48px
+    background: linear-gradient(180deg, #FFFA7F 0%, #FFD706 100%), #FFD25F
+    box-shadow: 0px 7px 25px rgba(255, 245, 7, 0.2)
+    border-radius: 15px
+    font-family: "Noto Sans"
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    color: #444444
+
+.wraper_inner
+    padding: 0 110px
+    margin: 0 auto
+
+//=== Header ===
+
+.section_header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 8px
+    padding-bottom: 8px
+
+    &_menu
+        display: flex
+        justify-content: space-between
+        width: 1410px
+        list-style-type: none
+
+        .item
+
+            &_menu_link
+                color: #252525
+                font-family: "Noto Sans"
+                font-weight: 500
+                font-size: 16px
+                font-style: normal
+
+            i
+                margin-left: 3px
+                color: #000
+
+.item_with_icon
+    display: flex
+    align-items: center
+    justify-content: center
+
+//=== Header ===
+
+//=== Adward ===
+
+.section_promo
+    display: flex
+    justify-content: space-between
+    height: 639px
+    position: relative
+    background: url('../img/bg1.jpg') center (center / cover) no-repeat
+
+    &_adward
+        margin-top: 130px
+        z-index: 1
+
+        &_text
+            font-family: "Ubuntu"
+            font-weight: 400
+            font-style: normal
+            font-size: 50px
+            line-height: 57px
+            color: #252525
+
+    &_slider
+        position: absolute
+        left: 36%
+        z-index: 2
+        display: flex
+        align-items: center
+        margin-top: 160px
+
+        &_cars
+            width: 100%
+            height: 446px
+            .car
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+        &_arrows
+            height: 160px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin-bottom: 100px
+            position: absolute
+            left: 90%
+            z-index: 3
+            .round
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 72px
+                height: 72px
+                background-color: #F7F7F7
+                border-radius: 100%
+                margin-bottom: 16px
+
+        &_divider
+            width: 146px
+            position: absolute
+            z-index: 3
+            top: 90%
+            left: 75%
+            &_line
+                width: 100%
+                height: 3px
+                position: relative
+                background: #D2D2D2
+                &:before
+                    content: ''
+                    width: 33%
+                    height: 100%
+                    position: absolute
+                    background: #ffff00
+
+            &_nums
+                display: flex
+                justify-content: space-between
+                width: 100%
+                color: #F7F7F7
+
+        /*.section_promo_slider_arrows_wrapper
+         position: absolute
+         left: 90%
+
+            /*.section_promo_slider_arrows
+
+                /*.round
+                 display: flex
+                 align-items: center
+                 justify-content: center
+                 width: 72px
+                 height: 72px
+                 background-color: #F7F7F7
+                 border-radius: 100%
+                 margin-bottom: 16px
+
+        /*.section_wrapper_divider
+         position: absolute
+         margin-top: 350px
+         left: 80%
+
+            /*.divider_nums
+             display: flex
+             justify-content: space-between
+             width: 144px
+             color: #F7F7F7
+
+            /*.section_promo_slider_divider
+             width: 144px
+             height: 3px
+             position: relative
+             background: #D2D2D2
+             &:before
+             content: ''
+             width: 33%
+             height: 100%
+             position: absolute
+             background: #ffff00
+
+//=== Adward ===
+
+//=== About us ===
+
+.section_about-us
+    height: 810px
+    padding-top: 60px
+
+    .section_about-us_wrapper
+        display: flex
+        justify-content: space-between
+
+        .section_about-us_promo_text
+            font-family: "Non Sans"
+            font-weight: 400
+            color: #252525
+            line-height: 19px
+
+        button
+            margin-top: 14px
+
+    .section_about-us_promo_logo
+        display: flex
+        justify-content: center
+        margin-top: 56px
+
+//=== About us ===
+
+//=== Catalog ===
+
+.section_catalog
+    background: url('../img/bg2.jpg') center (center / cover) no-repeat
+    height: 923px
+    @include paddings
+    &_header
+        text-align: center
+        font-family: "Ubuntu"
+        font-weight: bold
+        font-size: 45px
+        letter-spacing: -0.03em
+        color: #252525
+    &_services
+        margin-top: 77px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_item
+            text-align: center
+            font-family: "Noto Sans"
+            font-weight: 700
+            font-size: 24px
+            line-height: 33px
+            color: #000000
+
+//=== Catalog ===
+
+//=== Basic ===
+
+.section_basic
+    @include paddings
+
+//=== Basic ===
+
+//=== News ===
+
+.section_news
+    @include paddings
+
+//=== News ===
+
+//=== Info ===
+
+.section_info
+
+//=== Info ===
+
+//=== Fotter ===
+
+.section_fotter
+
+//=== Fotter ===
